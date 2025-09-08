@@ -29,25 +29,3 @@ def get_average(numbers: List[float] = Query(..., description="List ของต
 def get_reverse(text: str = Query(..., description="ข้อความที่ต้องการกลับ")):
     result = reverse_string(text)
     return {"reversed": result}
-
-
-def complex_function():
-    # ฟังก์ชันนี้มีความซับซ้อนเกินไป
-    for i in range(10):
-        for j in range(5):
-            if i % 2 == 0:
-                print(f"Even: {i}")
-            else:
-                print(f"Odd: {i}")
-            for k in range(3):
-                print(f"Nested Loop: {k}")
-
-
-unused_variable = 42  # ตัวแปรที่ไม่ได้ใช้งาน
-
-
-def badNaming():
-    # การตั้งชื่อที่ไม่สื่อความหมาย
-    x = 10
-    y = 20
-    return x + y
